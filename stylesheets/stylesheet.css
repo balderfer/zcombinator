@@ -181,7 +181,7 @@ p {
 (min-resolution: 192dpi) { 
   /* Retina-specific stuff here */
   .container {
-    font-size: 32px;
+    font-size: 40px;
   }
   .svg-logo {
     width: 90%;
