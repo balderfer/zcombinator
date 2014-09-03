@@ -183,4 +183,7 @@ p {
   .container {
     font-size: 32px;
   }
+  .svg-logo {
+    width: 90%;
+  }
 }
