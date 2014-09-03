@@ -74,6 +74,11 @@ body {
   margin-bottom: 1.25em;
 }
 
+.svg-logo-sm {
+  width: 2em;
+  margin: .625em auto 1em auto;
+}
+
 h1 {
   font-family: "brandon-grotesque";
   font-weight: 700;
@@ -102,7 +107,6 @@ p {
   color: #F26522;
   margin-top: 2.5em;
   text-align: left;
-  margin-bottom: 2.5em;
 }
 
 .container .section-divider h2 {
@@ -110,7 +114,6 @@ p {
   margin: 0 0 0 35%;
   display: inline-block;
   text-align: center;
-
 }
 
 .container .section-divider::before {
@@ -167,6 +170,41 @@ p {
   font-size: 1.4em;
 }
 
+.container .interns {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 1.25em;
+  height: auto;
+}
+.container .interns li {
+  width: 33%;
+  height: 11.25em;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  float: left;
+}
+
+.container .interns li .pic {
+  width: 5em;
+  height: 5em;
+  margin: 0 auto;
+  background-color: white;  
+  margin-bottom: 10px;
+  border-radius: 6.25em;
+  overflow: hidden;
+}
+
+.container .interns li p {
+  line-height: 1.2em;
+  font-size: 1em;
+}
+
+.container .interns li .name {
+  font-weight: 700;
+  font-size: 1em;
+}
+
 .container .footer {
   margin-top: 40px;
   height: 6.25em;
@@ -178,9 +216,7 @@ p {
   font-size: 1em;
 }
 
-@media 
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
+@media only screen and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   /* Retina-specific stuff here */
   .container {
     font-size: 40px;
