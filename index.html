@@ -8,22 +8,26 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="description" content="Z Combinator, the one and only.">
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+
     <script type="text/javascript" src="//use.typekit.net/jwb1hzz.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
+    <script type="text/javascript" src="./javascripts/main.js"></script>
     <title>Z Combinator</title>
   </head>
 
   <body>
-    <div class="container">
-      <svg version="1.1" class="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 640" enable-background="new 0 0 640 640" xml:space="preserve">
-        <rect fill="#F26522" width="640" height="640"/>
-        <g>
-          <path fill="#FFFFFF" d="M229.4,158.2h195.8v35.1L282.4,430.6c-7.5,12.5-13.5,21.5-21,33.1c12-0.5,18-0.5,29.5-0.5h136.2l-10.5,35.1H212.8v-31.5l146.7-241.4c6.5-10.5,14.5-23.5,22-33c-9.5,0.5-20.5,0.5-35.6,0.5H217.8L229.4,158.2z"/>
-        </g>
-      </svg>
+    <svg version="1.1" class="svg-logo" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 640" enable-background="new 0 0 640 640" xml:space="preserve">
+      <rect id="logo-bg" fill="#F26522" width="640" height="640"/>
+      <g id="logo-z" style="opacity: 0;">
+        <path fill="#FFFFFF" d="M229.4,158.2h195.8v35.1L282.4,430.6c-7.5,12.5-13.5,21.5-21,33.1c12-0.5,18-0.5,29.5-0.5h136.2l-10.5,35.1H212.8v-31.5l146.7-241.4c6.5-10.5,14.5-23.5,22-33c-9.5,0.5-20.5,0.5-35.6,0.5H217.8L229.4,158.2z"/>
+      </g>
+    </svg>
+    <div class="container" style="display: none;">
 
       <h1>Z Combinator</h1>
       <div class="content cf">
