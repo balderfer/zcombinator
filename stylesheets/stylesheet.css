@@ -271,13 +271,3 @@ li p {
   margin-top: 0.625em;
   font-size: 1em;
 }
-
-@media only screen and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Retina-specific stuff here */
-  .container {
-    font-size: 40px;
-  }
-  .svg-logo {
-    width: 60%;
-  }
-}
