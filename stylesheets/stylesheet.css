@@ -149,6 +149,14 @@ p {
   float: left;
 }
 
+.pic {
+  opacity: 0;
+}
+
+li p {
+  opacity: 0;
+}
+
 .container .partners li .pic {
   width: 6.25em;
   height: 6.25em;
@@ -205,10 +213,9 @@ p {
 }
 
 .container .footer {
-  margin-top: 40px;
+  margin-top: 2em;
   height: 6.25em;
   box-sizing: border-box;
-  padding-top: 40px;
 }
 
 .container .footer p {
@@ -216,8 +223,8 @@ p {
 }
 .paragraph {
   font-family: "vollkorn";
-  font-size: 1.2em;
-  line-height: 1.2em;
+  font-size: 1em;
+  line-height: 1.4em;
   width: 95%;
   margin: 0 auto;
   margin-top: 0.5em;
@@ -228,7 +235,7 @@ p {
   height: 2.75em;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 4px;
+  padding-top: 5px;
   margin: 1.25em auto 0 auto;
   border-radius: 40px;
   border: 0.125em solid #F26522;
@@ -236,6 +243,10 @@ p {
   color: #F26522;
   -webkit-transition: background-color 200ms, color 200ms;
   transition: background-color 200ms, color 200ms;
+}
+
+.button p {
+  font-size: 1.2em;
 }
 
 .button:hover {
