@@ -117,12 +117,14 @@ p {
   text-transform: uppercase;
   color: #F26522;
   margin-top: 2.5em;
-  text-align: left;
+  text-align: center;
+  width: auto;
 }
 
 .container .section-divider h2 {
+  width: auto;
   padding: 0 0.5em;
-  margin: 0 0 0 35%;
+  margin: 0 auto;
   display: inline-block;
   text-align: center;
   background-color: #ECF0F1;
