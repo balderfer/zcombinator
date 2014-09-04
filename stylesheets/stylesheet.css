@@ -214,6 +214,37 @@ p {
 .container .footer p {
   font-size: 1em;
 }
+.paragraph {
+  font-family: "vollkorn";
+  font-size: 1.2em;
+  line-height: 1.2em;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 0.5em;
+}
+
+.button {
+  width: 240px;
+  height: 2.75em;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 4px;
+  margin: 1.25em auto 0 auto;
+  border-radius: 40px;
+  border: 0.125em solid #F26522;
+  background-color: #ECF0F1;
+  color: #F26522;
+  -webkit-transition: background-color 200ms, color 200ms;
+  transition: background-color 200ms, color 200ms;
+}
+
+.button:hover {
+  background-color: #F26522;
+  color: white;
+  -webkit-transition: background-color 200ms, color 200ms;
+  transition: background-color 200ms, color 200ms;
+  cursor: pointer;
+}
 
 @media only screen and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   /* Retina-specific stuff here */
