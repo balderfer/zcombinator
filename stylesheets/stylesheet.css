@@ -99,6 +99,18 @@ p {
   text-align: center;
 }
 
+#logo.flip {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+#logo {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transform: rotateY(0);
+}
+
 .container .section-divider {
   font-family: "brandon-grotesque";
   font-size: 1.2em;
@@ -109,30 +121,22 @@ p {
 }
 
 .container .section-divider h2 {
-  width: 30%;
+  padding: 0 0.5em;
   margin: 0 0 0 35%;
   display: inline-block;
   text-align: center;
-}
-
-.container .section-divider::before {
-  content: "";
-  border-top: 0.125em solid #F26522;
-  width: 35%;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  margin-top: 0.625em;
+  background-color: #ECF0F1;
 }
 
 .container .section-divider::after {
   content: "";
   border-top: 0.125em solid #F26522;
-  width: 35%;
+  width: 100%;
   display: inline-block;
   position: absolute;
   right: 0;
   margin-top: 0.625em;
+  z-index: -10;
 }
 
 .container .partners {

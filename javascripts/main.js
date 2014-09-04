@@ -1,9 +1,22 @@
+var flipped = false;
+
 function slideAlert(el) {
     $(el).slideDown(200);
 }
 
 function disableButton(el) {
     $(el).addClass('disable');
+}
+
+function flipLogo() {
+    if (flipped) {
+        $("#logo").attr('class', 'svg-logo');
+        flipped = false;
+    }
+    else {
+        $("#logo").attr('class', 'svg-logo flip');
+        flipped = true;
+    }
 }
 
 jQuery(document).ready(function($) {
@@ -39,7 +52,7 @@ jQuery(document).ready(function($) {
     window.setTimeout(function() {
         $("#logo").animate({
             margin: "60px auto 20px auto",
-        }, 500);
+        }, 1000, "easeInOutBack");
         $(".container").fadeIn(1000, function() {
             $(window).scroll(function(event) {
                 var count = 0;
@@ -55,7 +68,7 @@ jQuery(document).ready(function($) {
                 for (var i = 0; i <= count; i++) {
                     element = ".pic" + i;
                     var position = $(element).offset();
-                    var posTop = position.top - $(window).scrollTop() + $(element).height() + 100;
+                    var posTop = position.top - $(window).scrollTop() + $(element).height() + 20;
                     if (i <= 1) {
                         if (posTop < $(window).height()) {
                             $(element).delay(i * 100).animate({opacity: 1}, 500);
