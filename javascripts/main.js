@@ -68,6 +68,12 @@ jQuery(document).ready(function($) {
                             $(element).parent().children('p').animate({opacity: 1}, 500);
                         }
                     }
+                    else if (i <= 7) {
+                        if (posTop < $(window).height()) {
+                            $(element).delay((i - 5) * 100).animate({opacity: 1}, 500);
+                            $(element).parent().children('p').animate({opacity: 1}, 500);
+                        }
+                    }
                 }
             });
         });
