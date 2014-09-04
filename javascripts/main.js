@@ -1,3 +1,11 @@
+function slideAlert(el) {
+    $(el).slideDown(200);
+}
+
+function disableButton(el) {
+    $(el).addClass('disable');
+}
+
 jQuery(document).ready(function($) {
     var wh = $(window).height();
     var ww = $(window).width();
@@ -38,3 +46,4 @@ jQuery(document).ready(function($) {
     }, 1000)
 
 });
+

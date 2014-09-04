@@ -246,6 +246,21 @@ p {
   cursor: pointer;
 }
 
+.button.disable {
+  opacity: 0.5;
+  background-color: #F26522;
+  color: white;
+}
+
+.button.disable:hover {
+  cursor: default;
+}
+
+.alert {
+  margin-top: 0.625em;
+  font-size: 1em;
+}
+
 @media only screen and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   /* Retina-specific stuff here */
   .container {
